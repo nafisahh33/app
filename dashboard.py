@@ -2,12 +2,17 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
+from tempfile import NamedTemporaryFile
 
 # Set the style for seaborn
 sns.set(style='darkgrid')
 
 # Load the data from the CSV file
-df= pd.read_csv("D:/PROJEK ANALISIS DATA REVISI/dashboard/main_data.csv")
+uploaded_file = st.file_uploader("File upload", type='csv')
+with NamedTemporaryFile(dir='.', suffix='main_data.csv') as f:
+    f.write(uploaded_file.getbuffer())
+    your_function_which_takes_a_path(f.D:\PROJEK ANALISIS DATA REVISI\dashboard\main_data.csv)
+
 
 # Streamlit app layout
 st.set_page_config(page_title="Olist Store Dashboard", layout="wide")  # Wider layout
