@@ -8,14 +8,7 @@ from tempfile import NamedTemporaryFile
 sns.set(style='darkgrid')
 
 # Load the data from the CSV file
-uploaded_file = st.file_uploader("File upload", type='main_csv')
-
-# Check if file was uploaded
-if uploaded_file is None:
-    st.write("No file uploaded yet.")
-else:
-    st.write("File uploaded successfully!")
-
+df= pd.read_csv("d:/PROJEK ANALISIS DATA REVISI/dashboard/main_data.csv")
 
 # Streamlit app layout
 st.set_page_config(page_title="Olist Store Dashboard", layout="wide")  # Wider layout
