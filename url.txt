@@ -1,0 +1,1 @@
+streamlit run "d:/PROJEK ANALISIS DATA REVISI/dashboard/dashboard.py"
