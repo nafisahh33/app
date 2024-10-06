@@ -8,7 +8,7 @@ from tempfile import NamedTemporaryFile
 sns.set(style='darkgrid')
 
 # Load the data from the CSV file
-df= pd.read_csv("d:/PROJEK ANALISIS DATA REVISI/dashboard/main_data.csv")
+df= pd.read_csv("dashboard/main_data.csv")
 
 # Streamlit app layout
 st.set_page_config(page_title="Olist Store Dashboard", layout="wide")  # Wider layout
