@@ -8,18 +8,13 @@ from tempfile import NamedTemporaryFile
 sns.set(style='darkgrid')
 
 # Load the data from the CSV file
-if uploaded_file is not None:
-    with NamedTemporaryFile(dir='.', suffix='main_data.csv', delete=False) as f:
-        # Write the uploaded file to the temporary file
-        f.write(uploaded_file.getbuffer())  # Corrected getbuffer
-        temp_file_path = f.name  # Get the path of the temporary file
+uploaded_file = st.file_uploader("File upload", type='main_csv')
 
-    # Call your function, passing the path of the temporary file
-    your_function_which_takes_a_path(temp_file_path)
-
-    # Optional: Read the file using pandas directly
-    df = pd.read_csv(temp_file_path)
-    st.write(df.head())  # Display the data
+# Check if file was uploaded
+if uploaded_file is None:
+    st.write("No file uploaded yet.")
+else:
+    st.write("File uploaded successfully!")
 
 
 # Streamlit app layout
