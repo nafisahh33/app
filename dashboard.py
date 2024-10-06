@@ -11,7 +11,7 @@ sns.set(style='darkgrid')
 uploaded_file = st.file_uploader("File upload", type='csv')
 with NamedTemporaryFile(dir='.', suffix='main_data.csv') as f:
     f.write(uploaded_file.getbuffer())
-    your_function_which_takes_a_path(f.D:\PROJEK ANALISIS DATA REVISI\dashboard\main_data.csv)
+    your_function_which_takes_a_path(f.D:/PROJEK ANALISIS DATA REVISI/dashboard/main_data.csv)
 
 
 # Streamlit app layout
