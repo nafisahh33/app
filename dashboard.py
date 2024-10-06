@@ -8,7 +8,7 @@ sns.set(style='darkgrid')
 
 # Load the data from the CSV file
 script_dir= os.path.dirname(os.path.realpath(__file__))
-df= pd.read_csv(f"{script_dir}/main_data.csv)
+df= pd.read_csv(f"{script_dir}/main_data.csv")
 
 # Streamlit app layout
 st.set_page_config(page_title="Olist Store Dashboard", layout="wide")  # Wider layout
