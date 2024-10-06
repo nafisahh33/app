@@ -7,7 +7,7 @@ import streamlit as st
 sns.set(style='darkgrid')
 
 # Load the data from the CSV file
-file_path = 'main_data.csv'  # Update with your file path
+file_path = 'D:\PROJEK ANALISIS DATA REVISI\dashboard\main_data.csv'  # Update with your file path
 df = pd.read_csv(file_path)
 
 # Streamlit app layout
